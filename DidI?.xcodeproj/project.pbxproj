@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		53579D3B2652221F0086C618 /* DidIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53579D282652221E0086C618 /* DidIApp.swift */; };
-		53579D3C2652221F0086C618 /* DidIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53579D282652221E0086C618 /* DidIApp.swift */; };
 		53579D3D2652221F0086C618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53579D292652221E0086C618 /* ContentView.swift */; };
-		53579D3E2652221F0086C618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53579D292652221E0086C618 /* ContentView.swift */; };
 		53579D3F2652221F0086C618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53579D2A2652221F0086C618 /* Assets.xcassets */; };
-		53579D402652221F0086C618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53579D2A2652221F0086C618 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53579D282652221E0086C618 /* DidIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidIApp.swift; sourceTree = "<group>"; };
 		53579D292652221E0086C618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53579D2A2652221F0086C618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		53579D2F2652221F0086C618 /* DidI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53579D2F2652221F0086C618 /* DidI?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DidI?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53579D322652221F0086C618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		53579D372652221F0086C618 /* DidI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53579D392652221F0086C618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53579D3A2652221F0086C618 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5378485B26528608003D5C3B /* DidI?.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DidI?.entitlements"; sourceTree = "<group>"; };
+		608BF87C448D71C8D1225B21 /* Pods_DidI___iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_DidI___iOS_.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,23 +32,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53579D342652221F0086C618 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40737769999636BBC5E97EEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				608BF87C448D71C8D1225B21 /* Pods_DidI___iOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53579D222652221E0086C618 = {
 			isa = PBXGroup;
 			children = (
+				5378485B26528608003D5C3B /* DidI?.entitlements */,
 				53579D272652221E0086C618 /* Shared */,
 				53579D312652221F0086C618 /* iOS */,
 				53579D382652221F0086C618 /* macOS */,
 				53579D302652221F0086C618 /* Products */,
+				40737769999636BBC5E97EEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,8 +68,7 @@
 		53579D302652221F0086C618 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				53579D2F2652221F0086C618 /* DidI.app */,
-				53579D372652221F0086C618 /* DidI.app */,
+				53579D2F2652221F0086C618 /* DidI?.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53579D2E2652221F0086C618 /* DidI (iOS) */ = {
+		53579D2E2652221F0086C618 /* DidI? (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 53579D432652221F0086C618 /* Build configuration list for PBXNativeTarget "DidI (iOS)" */;
+			buildConfigurationList = 53579D432652221F0086C618 /* Build configuration list for PBXNativeTarget "DidI? (iOS)" */;
 			buildPhases = (
 				53579D2B2652221F0086C618 /* Sources */,
 				53579D2C2652221F0086C618 /* Frameworks */,
@@ -105,26 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = "DidI (iOS)";
+			name = "DidI? (iOS)";
 			productName = "DidI (iOS)";
-			productReference = 53579D2F2652221F0086C618 /* DidI.app */;
-			productType = "com.apple.product-type.application";
-		};
-		53579D362652221F0086C618 /* DidI (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53579D462652221F0086C618 /* Build configuration list for PBXNativeTarget "DidI (macOS)" */;
-			buildPhases = (
-				53579D332652221F0086C618 /* Sources */,
-				53579D342652221F0086C618 /* Frameworks */,
-				53579D352652221F0086C618 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "DidI (macOS)";
-			productName = "DidI (macOS)";
-			productReference = 53579D372652221F0086C618 /* DidI.app */;
+			productReference = 53579D2F2652221F0086C618 /* DidI?.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,12 +122,9 @@
 					53579D2E2652221F0086C618 = {
 						CreatedOnToolsVersion = 12.5;
 					};
-					53579D362652221F0086C618 = {
-						CreatedOnToolsVersion = 12.5;
-					};
 				};
 			};
-			buildConfigurationList = 53579D262652221E0086C618 /* Build configuration list for PBXProject "DidI" */;
+			buildConfigurationList = 53579D262652221E0086C618 /* Build configuration list for PBXProject "DidI?" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,8 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				53579D2E2652221F0086C618 /* DidI (iOS) */,
-				53579D362652221F0086C618 /* DidI (macOS) */,
+				53579D2E2652221F0086C618 /* DidI? (iOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -172,14 +151,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53579D352652221F0086C618 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53579D402652221F0086C618 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -189,15 +160,6 @@
 			files = (
 				53579D3D2652221F0086C618 /* ContentView.swift in Sources */,
 				53579D3B2652221F0086C618 /* DidIApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53579D332652221F0086C618 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53579D3E2652221F0086C618 /* ContentView.swift in Sources */,
-				53579D3C2652221F0086C618 /* DidIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +280,9 @@
 		53579D442652221F0086C618 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DidI?.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7PRW3G762;
 				ENABLE_PREVIEWS = YES;
@@ -330,7 +293,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabriel.tetz.DidI;
-				PRODUCT_NAME = DidI;
+				PRODUCT_NAME = "DidI?";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,8 +303,9 @@
 		53579D452652221F0086C618 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "DidI?.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F7PRW3G762;
 				ENABLE_PREVIEWS = YES;
@@ -352,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabriel.tetz.DidI;
-				PRODUCT_NAME = DidI;
+				PRODUCT_NAME = "DidI?";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,58 +324,10 @@
 			};
 			name = Release;
 		};
-		53579D472652221F0086C618 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = F7PRW3G762;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gabriel.tetz.DidI;
-				PRODUCT_NAME = DidI;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		53579D482652221F0086C618 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = F7PRW3G762;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gabriel.tetz.DidI;
-				PRODUCT_NAME = DidI;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		53579D262652221E0086C618 /* Build configuration list for PBXProject "DidI" */ = {
+		53579D262652221E0086C618 /* Build configuration list for PBXProject "DidI?" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53579D412652221F0086C618 /* Debug */,
@@ -420,20 +336,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		53579D432652221F0086C618 /* Build configuration list for PBXNativeTarget "DidI (iOS)" */ = {
+		53579D432652221F0086C618 /* Build configuration list for PBXNativeTarget "DidI? (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				53579D442652221F0086C618 /* Debug */,
 				53579D452652221F0086C618 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53579D462652221F0086C618 /* Build configuration list for PBXNativeTarget "DidI (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53579D472652221F0086C618 /* Debug */,
-				53579D482652221F0086C618 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

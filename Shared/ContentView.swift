@@ -6,32 +6,55 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     @State var didI: Bool = UserDefaults.standard.bool(forKey: "Did")
     
     var body: some View {
-        if(didI){
-            Button(
-                action: {
-                    self.didI = false
-                    UserDefaults.standard.set(self.didI, forKey: "Did")
-                },
-                   label: {
-                Text("I Did 🥳").bold()
-            }).buttonStyle(GreenButton())
-        } else {
-            Button(
-                action: {
-                    self.didI = true
-                    UserDefaults.standard.set(self.didI, forKey: "Did")
-                },
-                   label: {
-                Text("I Didn't 😔").bold()
-            }).buttonStyle(RedButton())
+        VStack{
+            if(didI){
+                Button(
+                    action: {
+                        self.didI = false
+                        UserDefaults.standard.set(self.didI, forKey: "Did")
+                        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+                    },
+                       label: {
+                    Text("I Did 🥳").bold()
+                }).buttonStyle(GreenButton())
+            } else {
+                Button(
+                    action: {
+                        self.didI = true
+                        UserDefaults.standard.set(self.didI, forKey: "Did")
+                        UNUserNotificationCenter.current()
+                            .requestAuthorization(options: [.alert, .badge, .sound]) {success, error in
+                                if success {
+                                    print("All set!")
+                                } else {
+                                    print("Error")
+                                }
+                            }
+                        let content = UNMutableNotificationContent()
+                        content.title = "Hey, you didn't 🤡"
+                        content.subtitle = "you have to do it 👻"
+                        content.sound = UNNotificationSound.default
+
+                        // show this notification five seconds from now
+                        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 79200, repeats: false)
+
+                        // choose a random identifier
+                        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+                        
+                        UNUserNotificationCenter.current().add(request)
+                    },
+                       label: {
+                    Text("I Didn't 😔").bold()
+                }).buttonStyle(RedButton())
+            }
         }
     }
-    
 }
 
 struct RedButton: ButtonStyle {
